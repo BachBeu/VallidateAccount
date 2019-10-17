@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Account</title>
+</head>
+<body>
+<script>
+    str = prompt("Nhập vào Account của bạn: ");
+    function validate(str) {
+        reg = /^[_a-z]{6,}$/;
+        if(reg.test(str)){
+            alert("Account " + str + " Nhập vào hợp lệ");
+        }else{
+            alert("Account " + str + "Nhập vào không hợp lệ");
+        }
+    }
+
+    validate(str);
+</script>
+</body>
+</html>
